@@ -18,3 +18,57 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* html {    
+  background: url(../public/landing.jpg);     
+  background-size: cover;
+} */
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #f00;
+}
+
+@font-face {
+  font-family: 'myraid-bold';
+  src: url(../public/fonts/myraidpro-bold.OTF);
+}
+
+@font-face {
+  font-family: 'myraid-semi-bold';
+  src: url(../public/fonts/myraidpro-semi-bold.OTF);
+}
+
+@font-face {
+  font-family: 'myraid-light';
+  src: url(../public/fonts/myraidpro-light.otf);
+}
+
+p {
+  font-family: 'myraid-light';
+  /* font-size: 40px; */
+}
+
+.bold {
+  font-family: 'myraid-bold';
+}
+
+.semi-bold {
+  font-family: 'myraid-semi-bold';
+}
+
+.text-title {
+  font-size: 72px;
+}
+
+.text-body-1 {
+  font-size: 40px;
+}
+
+.text-body-2 {
+  font-size: 24px;
+}
