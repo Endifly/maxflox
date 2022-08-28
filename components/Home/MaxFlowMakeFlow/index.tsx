@@ -1,31 +1,111 @@
+import DescBox from "./DescBox";
+
+import clock from "public/clock.png";
+import pig from "public/pig.png";
+import cloud from "public/cloud.png";
+import bgHero from "public/bg-hero.png";
+import agri from "public/agri.png";
+import Image from "next/image";
+import Title from "components/Title";
+import maxflow from "public/icon_maxflow.png";
+
 const MaxFlowMakeFlow = () => {
   return (
-    <div className="h-screen bg-blue-100 flex flex-col justify-center items-center">
-      <div className="bg-white p-8 rounded-xl max-w-md w-full">
-        <p className="text-center text-xl font-bold">Maxflow Make Flow</p>
+    <div className="min-h-screen relative flex flex-col justify-center items-center text-hero">
+      <div
+        className="bg-white p-16 rounded-xl max-w-screen-sm w-full my-12"
+        style={{
+          borderRadius: 60,
+        }}
+      >
+        <p className="text-6xl semi-bold">Maxflow Make Flow</p>
 
         <div className="py-4" />
 
-        <p className="text-center">
+        <p className="text-body-2">
           Our IPRs and science Directs Journals Prove that we are the one and
           only Dual Halbach Arrays Magnetize Vortex Water Innovation
         </p>
 
         <div className="py-4" />
 
-        <div className="grid grid-cols-2 gap-y-8">
-          <p>img</p>
-          <p>+30% speedup crops.</p>
+        <div>
+          <DescBox imgSrc={clock.src} title="+30%" desc="speedup crops." />
 
-          <p>img</p>
-          <p>-30% Cost Watering Fertilizer, Crop maintenance.</p>
+          <div className="py-4" />
+          <DescBox
+            imgSrc={pig.src}
+            title="-30% Cost"
+            desc="Watering, Fertilizer, Crop maintenance."
+          />
 
-          <p>img</p>
-          <p>No energy consume needed. Cut-loss CO2 emission in agriculture.</p>
+          <div className="py-4" />
+          <DescBox
+            imgSrc={cloud.src}
+            title="No energy consume"
+            desc="needed. Cut-loss CO2 emission in agriculture."
+          />
+        </div>
+
+        <div className="py-4" />
+      </div>
+
+      <div className="flex justify-center w-full max-w-screen-sm text-white">
+        <img src={maxflow.src} alt="maxflow" className="w-[128px]" />
+        <div className="px-4" />
+        <div>
+          <p
+            className="text-title semi-bold m-0"
+            style={{
+              letterSpacing: 1,
+            }}
+          >
+            maxflow
+          </p>
+          <p className="light text-body-2 -mt-4">
+            Magnetize Vortex Water for Agriculture
+          </p>
         </div>
       </div>
 
-      <div>LOGO</div>
+      <div className="absolute top-0 w-full h-[75%]">
+        <Image
+          src={bgHero.src}
+          layout="fill"
+          alt="whirpool"
+          className="lg:blur"
+          style={{ zIndex: -1 }}
+        />
+      </div>
+      <div
+        className="absolute top-0 w-full h-[75%] bg-hero"
+        style={{
+          zIndex: -2,
+        }}
+      />
+      <div
+        className="absolute bottom-0 w-full h-[50%]"
+        style={{
+          transform: "translateY(50%)",
+          zIndex: -1,
+        }}
+      >
+        <Image
+          src={agri.src}
+          layout="fill"
+          alt="whirpool"
+          className="lg:blur"
+          style={{ zIndex: -1 }}
+        />
+      </div>
+      <div
+        className="absolute bottom-0 w-full h-[50%]"
+        style={{
+          transform: "translateY(50%)",
+          zIndex: -2,
+          backgroundColor: "#2c8633",
+        }}
+      />
     </div>
   );
 };

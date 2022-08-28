@@ -32,7 +32,7 @@ const Team = () => {
 
       <div className="py-4" />
 
-      <div className="max-w-screen-sm w-full">
+      <div className="max-w-screen-md w-full">
         <FounderBox
           imgSrc={kongpop.src}
           name="PH.D. Kongpop U-Yen"
@@ -132,6 +132,7 @@ const Team = () => {
           src={bgHero.src}
           layout="fill"
           alt="whirpool"
+          className="lg:blur"
           style={{ zIndex: -1 }}
         />
       </div>
