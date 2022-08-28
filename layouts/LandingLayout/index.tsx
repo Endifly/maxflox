@@ -52,16 +52,10 @@ const LandingLayout: React.FC<Props> = ({
 
   return (
     <div
-      className={`h-screen w-screen flex justify-center relative ${className}`}
-      style={style}
+      className={`min-h-screen w-screen flex justify-center relative ${className}`}
+      style={{ ...style }}
     >
-      <Image
-        src={bg.src}
-        layout="fill"
-        className="absolute xl:blur"
-        alt="whirepool"
-      />
-      <div className={`w-full relative ${maxWidth}`}>{children}</div>
+      {children}
       <div
         className="arrow-down absolute bottom-[32px]"
         onClick={scrollToNext}

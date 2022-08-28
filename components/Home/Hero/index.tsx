@@ -1,43 +1,85 @@
+import Title from "components/Title";
 import LandingLayout from "layouts/LandingLayout";
 import bg from "public/bg-hero.png";
+import tube from "/public/tube.png";
+import bgHero from "public/bg-hero.png";
+import Image from "next/image";
+import maxflow from "public/icon_maxflow.png";
+import worldAgri from "public/world-agri.png";
+import scienceDirect from "public/science-direct.png";
 
 const Hero = () => {
   return (
-    <LandingLayout
-      maxWidth="max-w-screen-xl"
-      useNextArrow
-      className="bg-hero"
-      // style={{
-      //   background: `url(${bg.src})`,
-      // }}
-    >
-      <div className="relative flex flex-col items-center h-full  w-full">
-        <div className="absolute top-[10%]">
-          <p className="bold text-white text-title text-center drop-shadow-md">
-            MAGNETIZED
-          </p>
-          <p className="bold text-white text-title text-center drop-shadow-xl">
-            VORTEX WATER
-          </p>
-          <p className="bold text-white text-center" style={{ fontSize: 32 }}>
-            TO NET ZERO
-          </p>
-        </div>
+    <LandingLayout maxWidth="max-w-screen-xl" useNextArrow className="relative">
+      <div
+        className="absolute top-0 w-full"
+        style={{
+          height: bgHero.height,
+        }}
+      >
+        <Image
+          src={bgHero.src}
+          layout="fill"
+          alt="whirpool"
+          className="lg:blur"
+          style={{ zIndex: -1 }}
+        />
+      </div>
+      <div
+        className="absolute top-0 w-full h-full"
+        style={{
+          zIndex: -2,
+        }}
+      >
+        <div className="w-full h-full bg-hero" style={{ zIndex: -2 }} />
+      </div>
 
-        <div
-          className="absolute bg-white left-0 bottom-[10%] p-8 drop-shadow-md"
+      <div className="absolute left-16 top-8 flex flex-col items-center">
+        <img src={maxflow.src} alt="maxflow" />
+        <p className="text-body-2 bold text-white">maxflow</p>
+      </div>
+
+      <div
+        className="flex justify-center max-w-screen-lg w-full relative "
+        style={
+          {
+            // perspective: "300px",
+            // transformStyle: "preserve-3d",
+          }
+        }
+      >
+        <img
+          src={tube.src}
+          className="absolute top-0 right-[15%]"
+          alt="tube"
           style={{
-            borderRadius: 80,
+            zIndex: 2,
+            height: "120vh",
+            marginTop: "35%",
+            // transform: "translateZ(5px) scale(0.71)",
           }}
-        >
-          <p className="semi-bold text-hero text-body-1">+ Soften hard water</p>
-          <p className="semi-bold text-hero text-body-1">+ Speed up crops</p>
-          <p className="semi-bold text-hero text-body-1">
-            + Break up calcium in water
-          </p>
-          <p className="semi-bold text-hero text-body-1">
-            + Improves water quality
-          </p>
+        />
+
+        <div className="relative flex flex-col items-center h-full  w-full">
+          <div className="py-16" />
+          <Title />
+
+          <div
+            className="absolute bg-white left-16 bottom-[10%] p-8 drop-shadow-md text-body-2 md:text-body-1"
+            style={{
+              borderRadius: 80,
+            }}
+          >
+            <p className="semi-bold text-hero ">+ Soften hard water</p>
+            <p className="semi-bold text-hero ">+ Speed up crops</p>
+            <p className="semi-bold text-hero ">+ Break up calcium in water</p>
+            <p className="semi-bold text-hero ">+ Improves water quality</p>
+            <div className="flex items-center">
+              <img src={scienceDirect.src} className="w-[128px]" />
+              <div className="px-1" />
+              <img src={worldAgri.src} className="w-[128px]" />
+            </div>
+          </div>
         </div>
       </div>
     </LandingLayout>

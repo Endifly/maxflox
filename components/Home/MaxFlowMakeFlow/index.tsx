@@ -20,7 +20,7 @@ const MaxFlowMakeFlow = () => {
       >
         <p className="text-6xl semi-bold">Maxflow Make Flow</p>
 
-        <div className="py-4" />
+        <div className="py-2" />
 
         <p className="text-body-2">
           Our IPRs and science Directs Journals Prove that we are the one and
@@ -46,8 +46,6 @@ const MaxFlowMakeFlow = () => {
             desc="needed. Cut-loss CO2 emission in agriculture."
           />
         </div>
-
-        <div className="py-4" />
       </div>
 
       <div className="flex justify-center w-full max-w-screen-sm text-white">
@@ -68,7 +66,9 @@ const MaxFlowMakeFlow = () => {
         </div>
       </div>
 
-      <div className="absolute top-0 w-full h-[75%]">
+      <div className="py-12" />
+
+      <div className="absolute top-0 w-full h-[70%]">
         <Image
           src={bgHero.src}
           layout="fill"
@@ -78,7 +78,7 @@ const MaxFlowMakeFlow = () => {
         />
       </div>
       <div
-        className="absolute top-0 w-full h-[75%] bg-hero"
+        className="absolute top-0 w-full h-[70%] bg-hero"
         style={{
           zIndex: -2,
         }}
@@ -86,7 +86,7 @@ const MaxFlowMakeFlow = () => {
       <div
         className="absolute bottom-0 w-full h-[50%]"
         style={{
-          transform: "translateY(50%)",
+          transform: "translateY(40%)",
           zIndex: -1,
         }}
       >

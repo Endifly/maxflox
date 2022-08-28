@@ -8,7 +8,7 @@ interface Props {
 const DescBox: React.FC<Props> = ({ desc, imgSrc, title }) => {
   return (
     <div className="grid gap-x-8 grid-cols-[128px_1fr] items-center">
-      <img src={imgSrc} alt={title} />
+      <img src={imgSrc} alt={title} className="w-[80px]" />
       <div className="inline">
         <p className="inline semi-bold text-body-2">{title}</p>
         <div className="px-1 inline" />

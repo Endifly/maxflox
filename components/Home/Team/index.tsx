@@ -14,6 +14,7 @@ import Title from "components/Title";
 
 import bgHero from "public/bg-hero.png";
 import Image from "next/image";
+import facebook from "public/icon_facebook.png";
 
 const Team = () => {
   return (
@@ -118,7 +119,9 @@ const Team = () => {
 
       <Title />
 
-      <div>F</div>
+      <div className="py-4" />
+
+      <img src={facebook.src} />
 
       <div className="pb-8" />
 

@@ -16,26 +16,18 @@ const Home: NextPage = () => {
   return (
     <div
       className={`${styles.container} relative`}
-      // className="w-screen h-screen"
-      // style={{
-      //   backgroundImage: `url(${bg.src})`,
-      //   width: "100%",
-      //   height: "100%",
-      // }}
+      style={
+        {
+          // perspective: "300px",
+          // transformStyle: "preserve-3d",
+        }
+      }
     >
-      <img
-        src={tube.src}
-        className="absolute top-0 right-[10%]"
-        alt="tube"
-        style={{ zIndex: 2, transform: `scale(0.7)` }}
-      />
       <Hero />
       <CatchWord />
       <MaxFlowMakeFlow />
       <Partner />
       <Team />
-      {/* <div className={styles.bg} /> */}
-      {/* <Image src="/public/landing.jpg" layout="fill" alt="asd" /> */}
     </div>
   );
 };

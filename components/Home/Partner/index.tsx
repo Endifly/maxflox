@@ -31,7 +31,7 @@ const Partner = () => {
       >
         Our key partners
       </p>
-      <div className="py-4" />
+      <div className="py-2" />
       <p className="text-body-2 text-hero">Our multi-stakeholder partnership</p>
       <p className="text-body-2 text-hero">for sustainable development tech</p>
 
