@@ -10,19 +10,26 @@ import scienceDirect from "public/science-direct.png";
 
 const Hero = () => {
   return (
-    <LandingLayout maxWidth="max-w-screen-xl" useNextArrow className="relative">
+    <LandingLayout
+      maxWidth="max-w-screen-xl"
+      useNextArrow
+      className="relative"
+      arrowClasses="arrow-down-white"
+    >
       <div
-        className="absolute top-0 w-full"
-        style={{
-          height: bgHero.height,
-        }}
+        className="absolute top-[25%] w-full"
+        style={
+          {
+            // height: bgHero.height,
+          }
+        }
       >
-        <Image
+        <img
           src={bgHero.src}
-          layout="fill"
+          // layout="fill"
           alt="whirpool"
-          className="lg:blur"
-          style={{ zIndex: -1 }}
+          className="lg:blur w-full"
+          style={{ zIndex: -1, maxHeight: bgHero.height }}
         />
       </div>
       <div
@@ -34,7 +41,7 @@ const Hero = () => {
         <div className="w-full h-full bg-hero" style={{ zIndex: -2 }} />
       </div>
 
-      <div className="absolute left-16 top-8 flex flex-col items-center">
+      <div className="absolute md:left-16 top-8 flex flex-col items-center items-center scale-75 md:scale-100">
         <img src={maxflow.src} alt="maxflow" />
         <p className="text-body-2 bold text-white">maxflow</p>
       </div>
@@ -50,7 +57,7 @@ const Hero = () => {
       >
         <img
           src={tube.src}
-          className="absolute top-0 right-[15%] hidden md:block"
+          className="absolute top-[5%] right-[15%] hidden md:block"
           alt="tube"
           style={{
             zIndex: 2,

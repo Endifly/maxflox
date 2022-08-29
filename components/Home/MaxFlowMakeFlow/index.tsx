@@ -107,7 +107,7 @@ const MaxFlowMakeFlow = () => {
       <div
         className="absolute bottom-0 w-full h-[50%]"
         style={{
-          transform: "translateY(50%)",
+          transform: "translateY(40%)",
           zIndex: -2,
           backgroundColor: "#2c8633",
         }}

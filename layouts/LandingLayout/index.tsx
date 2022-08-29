@@ -5,6 +5,7 @@ import Image from "next/image";
 
 interface Props extends BaseChildren, BaseStyle, BaseMaxWidth {
   useNextArrow?: boolean;
+  arrowClasses?: string;
 }
 
 const LandingLayout: React.FC<Props> = ({
@@ -13,6 +14,7 @@ const LandingLayout: React.FC<Props> = ({
   style,
   maxWidth = "max-w-none",
   useNextArrow = false,
+  arrowClasses = "arrow-down-main",
 }) => {
   const topRef = useRef<HTMLDivElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -57,7 +59,7 @@ const LandingLayout: React.FC<Props> = ({
     >
       {children}
       <div
-        className="arrow-down absolute bottom-[32px]"
+        className={`${arrowClasses} absolute bottom-[32px]`}
         onClick={scrollToNext}
       />
       <div className="absolute bottom-0" ref={bottomRef} />

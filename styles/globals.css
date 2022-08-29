@@ -24,13 +24,22 @@ a {
   background-size: cover;
 } */
 
-.arrow-down {
+.arrow-down-main {
   width: 0; 
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   
   border-top: 20px solid #1d70b6;
+}
+
+.arrow-down-white {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #fff;
 }
 
 @font-face {

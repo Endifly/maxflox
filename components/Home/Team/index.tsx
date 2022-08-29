@@ -65,7 +65,7 @@ const Team = () => {
         <FounderBox
           imgSrc={chanida.src}
           name="Chanida Pengpol"
-          position="CMO"
+          position="VP, CMO"
           side="left"
           experiences={[
             "MA in MBA",
@@ -89,7 +89,7 @@ const Team = () => {
 
       <div className="py-12" />
 
-      <div className="inline text-hero">
+      <div className="inline text-hero text-center">
         <p className="inline bold text-5xl">Our team member</p>
         <p className="inline text-2xl"> who work with us</p>
       </div>
@@ -115,28 +115,38 @@ const Team = () => {
         />
       </div>
 
-      <div className="py-40" />
+      <div className="py-16" />
 
       <Title />
 
       <div className="py-4" />
 
-      <img src={facebook.src} />
+      <a
+        href="https://www.facebook.com/maxflowwater/"
+        target="_blank"
+        // rel="noreferrer"
+        style={{
+          zIndex: 2,
+        }}
+        rel="noreferrer"
+      >
+        <img src={facebook.src} alt="facebook" />
+      </a>
 
       <div className="pb-8" />
 
       <div
         className="absolute bottom-0 w-full"
         style={{
-          height: bgHero.height,
+          zIndex: -1,
         }}
       >
-        <Image
+        <img
           src={bgHero.src}
-          layout="fill"
+          // layout="fill"
           alt="whirpool"
-          className="lg:blur"
-          style={{ zIndex: -1 }}
+          className="lg:blur w-full"
+          style={{ maxHeight: bgHero.height }}
         />
       </div>
       <div
