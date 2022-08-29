@@ -2,7 +2,7 @@ const Title = () => {
   return (
     <div>
       <p
-        className="bold text-white text-title text-center"
+        className="bold text-white text-4xl md:text-7xl text-center"
         style={{
           textShadow:
             "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
@@ -12,7 +12,7 @@ const Title = () => {
         MAGNETIZED
       </p>
       <p
-        className="bold text-white text-title text-center -mt-6"
+        className="bold text-white text-4xl md:text-7xl text-center "
         style={{
           textShadow:
             "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
@@ -21,9 +21,9 @@ const Title = () => {
         VORTEX WATER
       </p>
       <p
-        className="bold text-white text-center -mt-6"
+        className="bold text-2xl md:text-4xl  text-white text-center "
         style={{
-          fontSize: 32,
+          // fontSize: 32,
           textShadow:
             "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
         }}

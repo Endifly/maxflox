@@ -13,16 +13,18 @@ const MaxFlowMakeFlow = () => {
   return (
     <div className="min-h-screen relative flex flex-col justify-center items-center text-hero">
       <div
-        className="bg-white p-16 rounded-xl max-w-screen-sm w-full my-12"
+        className="bg-white p-8 md:p-16 rounded-xl max-w-screen-sm w-full my-12"
         style={{
           borderRadius: 60,
         }}
       >
-        <p className="text-6xl semi-bold">Maxflow Make Flow</p>
+        <p className="text-4xl md:text-6xl semi-bold text-center md:text-left">
+          Maxflow Make Flow
+        </p>
 
         <div className="py-2" />
 
-        <p className="text-body-2">
+        <p className="text-body-2 text-center md:text-left">
           Our IPRs and science Directs Journals Prove that we are the one and
           only Dual Halbach Arrays Magnetize Vortex Water Innovation
         </p>
@@ -48,12 +50,16 @@ const MaxFlowMakeFlow = () => {
         </div>
       </div>
 
-      <div className="flex justify-center w-full max-w-screen-sm text-white">
-        <img src={maxflow.src} alt="maxflow" className="w-[128px]" />
+      <div className="flex justify-center items-center w-full max-w-screen-sm text-white">
+        <img
+          src={maxflow.src}
+          alt="maxflow"
+          className="w-[96px] md:w-[128px]"
+        />
         <div className="px-4" />
         <div>
           <p
-            className="text-title semi-bold m-0"
+            className="text-4xl md:text-8xl semi-bold m-0"
             style={{
               letterSpacing: 1,
             }}

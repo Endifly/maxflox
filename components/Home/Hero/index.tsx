@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="flex justify-center max-w-screen-lg w-full relative "
+        className="flex justify-center max-w-screen-lg w-full relative"
         style={
           {
             // perspective: "300px",
@@ -50,7 +50,7 @@ const Hero = () => {
       >
         <img
           src={tube.src}
-          className="absolute top-0 right-[15%]"
+          className="absolute top-0 right-[15%] hidden md:block"
           alt="tube"
           style={{
             zIndex: 2,
@@ -61,11 +61,13 @@ const Hero = () => {
         />
 
         <div className="relative flex flex-col items-center h-full  w-full">
-          <div className="py-16" />
+          <div className="py-24 lg:py-16" />
           <Title />
 
+          <div className="py-12 lg:py-0" />
+
           <div
-            className="absolute bg-white left-16 bottom-[10%] p-8 drop-shadow-md text-body-2 md:text-body-1"
+            className="md:absolute static bg-white left-6 lg:left-16 bottom-[10%] p-8 drop-shadow-md text-body-2 md:text-body-1"
             style={{
               borderRadius: 80,
             }}

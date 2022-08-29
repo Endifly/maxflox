@@ -12,7 +12,7 @@ const CatchWord = () => {
     <LandingLayout useNextArrow className="bg-white">
       <div className="flex flex-col max-w-screen-lg w-full relative px-4">
         <div
-          className="absolute top-[20%] right-0 w-[45%]"
+          className="absolute top-[20%] right-0 w-[45%] hidden md:block"
           style={{ zIndex: 1 }}
         >
           <img src={gulf.src} style={{ zIndex: 1 }} />
@@ -26,7 +26,7 @@ const CatchWord = () => {
           </div>
         </div>
 
-        <div className="flex-1" />
+        <div className="flex-1 py-4 md:py-0" />
 
         <div className="max-w-screen-sm text-hero">
           <div className="inline">

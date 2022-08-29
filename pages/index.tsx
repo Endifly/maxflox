@@ -11,19 +11,20 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import tube from "../public/tube.png";
+import Tube from "components/Home/Tube";
 
 const Home: NextPage = () => {
   return (
     <div
-      className={`${styles.container} relative`}
-      style={
-        {
-          // perspective: "300px",
-          // transformStyle: "preserve-3d",
-        }
-      }
+      className={`w-screen relative`}
+      style={{
+        overflowX: "hidden",
+        // perspective: "300px",
+        // transformStyle: "preserve-3d",
+      }}
     >
       <Hero />
+      <Tube />
       <CatchWord />
       <MaxFlowMakeFlow />
       <Partner />
